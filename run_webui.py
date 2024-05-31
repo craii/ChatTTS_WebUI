@@ -62,7 +62,7 @@ def text_to_speech(text: str,
     :param temperature:
     :param top_P:
     :param top_K:
-    :return: "随机采样", "基于模型(spk_stat.pt)采样"
+    :return:
     """
     sampler = {"随机采样": generate_speaker_tensor,
                "基于模型(spk_stat.pt)采样": generate_speaker_tensor_a}[sample_method]
